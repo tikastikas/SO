@@ -15,3 +15,12 @@ int main() {
 // the size is 12 because of the '\0' character since it ends the string
 
 // H e l l o   W o r l d \0 
+ 
+// every i increment is by 4 bytes
+
+// &(msg[i]) - endereço de memoria de msg[i], vai ser colocado em %p (pointer format string) na string
+//msg[i] - valor de msg[i], vai ser colocado em %c (char format string) na string
+//msg + i - endereço de memoria de msg + i, que é equivalente a &msg[i]. vai ser colocado em %p na string
+//*(msg + i) - valor de msg + i, equivalente a msg[i]. vai ser colocado em %c na string
+
+// char only has 1 byte therefore msg+i works because of that
