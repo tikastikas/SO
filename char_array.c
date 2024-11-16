@@ -16,7 +16,7 @@ int main() {
 
 // H e l l o   W o r l d \0 
  
-// every i increment is by 4 bytes
+// every i increment is by 1 byte
 
 // &(msg[i]) - endereço de memoria de msg[i], vai ser colocado em %p (pointer format string) na string
 //msg[i] - valor de msg[i], vai ser colocado em %c (char format string) na string
