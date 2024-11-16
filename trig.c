@@ -1,11 +1,11 @@
-#include <stdio.h>
-#include <math.h>
+#include <stdio.h> // header to print text on the screen
+#include <math.h> // contains 'sin', 'cos' and 'M_PI'
 
-#define START 0
-#define ONE_TURN 360
+#define START 0 // START is set to 0 (used to start something)
+#define ONE_TURN 360 // set to 360 (one full circle)
 
-double cos_table[ONE_TURN];
-double sin_table[ONE_TURN];
+double cos_table[ONE_TURN]; // array cos with 360 elements
+double sin_table[ONE_TURN]; // array sin with 360 elements
 
 void build_tables() {
     int i;
@@ -16,11 +16,11 @@ void build_tables() {
 }
 
 double sin_degrees(int angle) {
-    return sin_table[angle % ONE_TURN];
+    return sin_table[angle % ONE_TURN]; // allows to add angles 360<
 }
 
 double cos_degrees(int angle) {
-    return cos_table[angle % ONE_TURN];
+    return cos_table[angle % ONE_TURN]; // allows to add angles 360<
 }
 
 int main() {
