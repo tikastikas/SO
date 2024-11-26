@@ -14,8 +14,10 @@ int main(int argc, char* argv[]) {
         /* child process */
         int retv = execlp(argv[1],argv[1],NULL);
         /* cria uma lista 
-        faz exec do argv[1], acaba em agrv[1]
-        o NULL permite-nos saber que já não é preciso mais nada */
+        arg1=argv[1] -> indica-nos o primeiro programa a ser passado;
+        arg2=argv[1] -> é o suposto primeiro argumento passado para o novo programa,
+        ou seja, é o próprio nome do programa e o primeiro argumento;
+        arg3=NULL -> o NULL permite-nos saber que já não é preciso mais nada */
         if (retv == -1) { perror("execlp"); exit(EXIT_FAILURE); }
     }
     else {
