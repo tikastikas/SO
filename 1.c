@@ -13,3 +13,5 @@ int main(int argc, char* argv[]) {
 // you end up with 8 processes 
 /* fork() creates a new process
 if we redo that command it will create a new one*/
+
+// processos totais: 2^n de forks

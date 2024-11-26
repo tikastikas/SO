@@ -11,3 +11,5 @@ int main(int argc, char* argv[]) {
 
 // 16 processes in total
 // why?
+
+// processos totais: 2^n de forks
